@@ -12,8 +12,8 @@ export const fetchBoardList=(page)=>dispatch=>{
     }))
 }
 
-export const fetchBoardTotalpage=()=>dispatch=>{
-    axios.get('http://localhost/board/total_react').then((response)=>dispatch({
+export const fetchBoardTotal=()=>dispatch=>{
+    axios.get('http://localhost/board/total_react').then(response=>dispatch({
         type:BOARD_PAGE,
         payload:response.data
     }))
@@ -67,7 +67,7 @@ export const boardUpdateData=(no)=>dispatch=>{
 }
 
 export const boardUpdateOk=(updateData)=>dispatch=>{
-    axios.post('http://localhost/board/update_react',null,{
+    axios.post('http://localhost/board/update_ok_react',null,{
         params:updateData
     }).then(response=>dispatch({
         type:BOARD_UPDATE,

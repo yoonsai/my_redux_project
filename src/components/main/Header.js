@@ -18,11 +18,11 @@ function Header(){
                     <div className="site-navigation">
                         <div className="row Navi">
                             <div className="col-6 col-lg-3">
-                                <a href="index.html" className="logo m-0 float-start">BookHive</a>
+                                <Link to="/" className="logo m-0 float-start">BookHive</Link>
                             </div>
                             <div className="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
                                 <ul className="js-clone-nav  text-right site-menu p-0 m-0">
-                                    <li className="active"><a href="index.html">Home</a></li>
+                                    <li className="active"><Link to="/">Home</Link></li>
                                     <li><a href="about.html">Book</a></li>
                                     <li><Link to="/board/list">Board</Link></li>
                                 </ul>

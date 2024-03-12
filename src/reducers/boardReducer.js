@@ -6,7 +6,8 @@ const boardState={
     total:0,
     result:'',
     update_data:{},
-    up_result:''
+    up_result:'',
+    del_result:''
 }
 
 export default function (state=boardState,action){
@@ -35,7 +36,7 @@ export default function (state=boardState,action){
         case BOARD_DELETE:
             return{
                 ...state,
-                result:action.payload
+                del_result:action.payload
             }
         case BOARD_UPDATE_DATA:
             return{

@@ -7,6 +7,10 @@ import Header from "./components/main/Header";
 import Home from "./components/main/Home";
 import Footer from "./components/main/Footer";
 import BoardList from "./components/board/BoardList";
+import BoardInsert from "./components/board/BoardInsert";
+import BoardDetail from "./components/board/BoardDetail";
+import BoardUpdate from "./components/board/BoardUpdate";
+import BoardDelete from "./components/board/BoardDelete";
 function App() {
     return (
         <Provider store={store}>
@@ -15,6 +19,10 @@ function App() {
                 <Routes>
                     <Route path={"/"} element={<Home />}/>
                     <Route path={"/board/list"} element={<BoardList/>}/>
+                    <Route path={"/board/insert"} element={<BoardInsert/>}/>
+                    <Route path={"/board/detail/:no"} element={<BoardDetail/>}/>
+                    <Route path={"/board/update/:no"} element={<BoardUpdate/>}/>
+                    <Route path={"/board/delete/:no"} element={<BoardDelete/>}/>
                 </Routes>
                 <Footer />
             </Router>
