@@ -53,6 +53,7 @@ function BoardList() {
                 </tr>
                 </tbody>
             </table>
+
             <table className={"table"}>
                 <thead>
                 <tr className={"success"}>
