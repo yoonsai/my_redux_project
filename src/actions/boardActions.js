@@ -1,4 +1,4 @@
-import {BOARD_LIST, BOARD_PAGE, BOARD_DETAIL,BOARD_INSERT,BOARD_UPDATE,BOARD_UPDATE_DATA,BOARD_DELETE} from "../actions/types";
+import {BOARD_LIST, BOARD_PAGE, BOARD_DETAIL,BOARD_INSERT,BOARD_UPDATE,BOARD_UPDATE_DATA,BOARD_DELETE,BOARD_MAIN_LIST} from "../actions/types";
 import axios from "axios";
 
 export const fetchBoardList=(page)=>dispatch=>{
@@ -74,4 +74,11 @@ export const boardUpdateOk=(updateData)=>dispatch=>{
         payload:response.data
     }))
 
+}
+
+export const boardMainList=()=>dispatch=>{
+    axios.get('http://localhost/board/main_react').then(response=>dispatch({
+        type:BOARD_MAIN_LIST,
+        payload:response.data
+    }))
 }

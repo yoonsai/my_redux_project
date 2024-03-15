@@ -8,57 +8,38 @@ function Footer(){
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="widget">
-                            <h3>About Passport<span className="text-primary">.</span> </h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <h3>BookHive<span className="text-primary">.</span> </h3>
+                            <p style={{"fontFamily":"pretendard"}}>지금, 당신의 상상력을 자극할 새로운 이야기를 찾아보세요.<br/>
+                                우리와 함께 지금 책의 세계로 떠나보세요!</p>
                         </div>
                         <div className="widget">
                             <h3>Connect</h3>
                             <ul className="list-unstyled social">
-                                <li><a href="#"><span className="icon-instagram"></span></a></li>
-                                <li><a href="#"><span className="icon-twitter"></span></a></li>
-                                <li><a href="#"><span className="icon-facebook"></span></a></li>
-                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                                <li><a href="#"><span className="icon-pinterest"></span></a></li>
-                                <li><a href="#"><span className="icon-dribbble"></span></a></li>
+                                <li style={{"marginRight": "5px"}}><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li style={{"marginRight": "5px"}}><a href="#"><span className="icon-facebook"></span></a></li>
+                                <li style={{"marginRight": "5px"}}><a href="#"><span className="icon-dribbble"></span></a></li>
                             </ul>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
 
-                    <div className="col-lg-2 ml-auto">
+                    <div className="col-lg-4 ml-auto">
                         <div className="widget">
                             <h3>Links</h3>
                             <ul className="list-unstyled float-left links">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Book</a></li>
+                                <li><a href="#">Board</a></li>
                             </ul>
                         </div> 
                     </div>
 
-                    <div className="col-lg-2">
-                        <div className="widget">
-                            <h3>Company</h3>
-                            <ul className="list-unstyled float-left links">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div> 
-                    </div> 
-
-
-                    <div className="col-lg-3">
+                    <div className="col-lg-4">
                         <div className="widget">
                             <h3>Contact</h3>
-                            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                            <address>경기도 김포시 수기로 67-54</address>
                             <ul className="list-unstyled links mb-4">
-                                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                                <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                                <li><a href="tel://11234567890">010-4152-2729</a></li>
+                                <li><a href="mailto:info@mydomain.com">micelle0716@naver.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +48,7 @@ function Footer(){
 
                 <div className="row mt-5">
                     <div className="col-12 text-center">
-                        <p className="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>Distributed By <a href="https:/themewagon.com" target="_blank">ThemeWagon</a>
+                        <p className="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; <a href={"#"}>윤새영</a>
                         </p>
                     </div>
                 </div>

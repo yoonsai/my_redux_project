@@ -11,6 +11,8 @@ import BoardInsert from "./components/board/BoardInsert";
 import BoardDetail from "./components/board/BoardDetail";
 import BoardUpdate from "./components/board/BoardUpdate";
 import BoardDelete from "./components/board/BoardDelete";
+import {BookList} from "./components/book/BookList";
+import {BookDetail} from "./components/book/BookDetail";
 function App() {
     return (
         <Provider store={store}>
@@ -23,6 +25,8 @@ function App() {
                     <Route path={"/board/detail/:no"} element={<BoardDetail/>}/>
                     <Route path={"/board/update/:no"} element={<BoardUpdate/>}/>
                     <Route path={"/board/delete/:no"} element={<BoardDelete/>}/>
+                    <Route path={"/book/list"} element={<BookList/>}/>
+                    <Route path={"/book/detail/:no"} element={<BookDetail/>}/>
                 </Routes>
                 <Footer />
             </Router>

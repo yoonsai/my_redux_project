@@ -45,10 +45,10 @@ function BoardDelete(){
             <div className="hero overlay">
 
                 <div className="img-bg rellax">
-                    <img src="http://localhost:3000/images/hero_2.jpg" alt="Image" className="img-fluid"/>
+                    <img src="http://localhost:3000/images/sticky.png" alt="Image" className="img-fluid boardImage"/>
                 </div>
                 <div className="container">
-                    <div className="row align-items-center justify-content-start">
+                <div className="row align-items-center justify-content-start">
                         <div className="col-lg-6 mx-auto text-center">
 
                             <h1 className="heading">Board</h1>

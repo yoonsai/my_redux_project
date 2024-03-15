@@ -4315,12 +4315,10 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem; }
 
 .page-item:first-child .page-link {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem; }
+  border-radius: 30px;}
 
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem; }
+  border-radius: 30px; }
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
@@ -10220,7 +10218,7 @@ textarea {
     border: 10px; }
 
 .image-stack__item--bottom {
-  position: absolute;
+  /*position: absolute;*/
   right: 10%;
   top: -50%;
   width: 65%;
@@ -10572,4 +10570,54 @@ textarea {
         font-family: "Pretendard Variable", sans-serif;
         padding: 11px 109px;
         font-size: 15px;
+      }
+
+      .boardImage{
+         transform:scale(1.1) translate(2%, -5%) !important;
+       }
+
+      .search_bar{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .searchBar{
+        height: 32px;
+        width: 295px;
+        border-radius: 19px;
+        border: 1px solid #f17945;
+        font-family: "pretendard";
+      }
+      .bookTitleSub{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        gap: 70px;
+      }
+
+      .titleSubLeft{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .titleSubRight{
+        font-size: 17px;
+      }
+
+      .price{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: right;
+        color: #f17945;
+      }
+
+      .backBtn{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        font-size: 16px !important;
+        width: 100%;
+        border-radius: 10px;
       }

@@ -23,7 +23,7 @@ function Header(){
                             <div className="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
                                 <ul className="js-clone-nav  text-right site-menu p-0 m-0">
                                     <li className="active"><Link to="/">Home</Link></li>
-                                    <li><a href="about.html">Book</a></li>
+                                    <li><a href="/book/list">Book</a></li>
                                     <li><Link to="/board/list">Board</Link></li>
                                 </ul>
                             </div>

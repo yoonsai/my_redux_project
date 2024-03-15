@@ -1,4 +1,4 @@
-import {BOARD_LIST,BOARD_PAGE,BOARD_DETAIL,BOARD_INSERT,BOARD_DELETE,BOARD_UPDATE,BOARD_UPDATE_DATA} from "../actions/types";
+import {BOARD_LIST,BOARD_PAGE,BOARD_DETAIL,BOARD_INSERT,BOARD_DELETE,BOARD_UPDATE,BOARD_UPDATE_DATA,BOARD_MAIN_LIST} from "../actions/types";
 
 const boardState={
     board_list:[],
@@ -7,7 +7,8 @@ const boardState={
     result:'',
     update_data:{},
     up_result:'',
-    del_result:''
+    del_result:'',
+    board_main_list:[]
 }
 
 export default function (state=boardState,action){
@@ -47,6 +48,11 @@ export default function (state=boardState,action){
             return{
                 ...state,
                 up_result:action.payload
+            }
+        case BOARD_MAIN_LIST:
+            return{
+                ...state,
+                board_main_list:action.payload
             }
         default:
             return state
