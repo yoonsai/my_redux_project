@@ -77,13 +77,15 @@ export const BookList=()=>{
                                 </div>
                             )
                         }
-                        <nav className="mt-5 " aria-label="Page navigation example" style={{"width":"50%","margin":"0 auto"}}
+                        <nav className="mt-5 " aria-label="Page navigation example" style={{"width":"50%","margin":"0 auto",
+                            "display": "flex",
+                            "justify-content": "center"}}
                              data-aos-delay="100">
                             <ul className="custom-pagination pagination">
                                     <Pagination
                                         activePage={curpage}
                                         itemsCountPerPage={12}
-                                        totalItemsCount={1000}
+                                        totalItemsCount={totalpage}
                                         pageRangeDisplayed={10}
                                         prevPageText={"<"}
                                         nextPageText={">"}
